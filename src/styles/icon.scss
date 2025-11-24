@@ -14,7 +14,32 @@
   }
 
   &--phone {
+    position: relative;
     background-image: url(../images/Icon-Phone.svg);
+
+    &::after {
+      content: '+1 234 555-55-55';
+      position: absolute;
+      transform: translateY(-50%);
+      white-space: nowrap;
+      right: 56px; // наскільки вправо від іконки
+      top: 50%;
+      color: $main-text-color;
+      opacity: 0;
+      transition: opacity $effectDuration;
+      pointer-events: none;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: 2px;
+      text-align: right;
+      vertical-align: middle;
+      text-transform: uppercase;
+    }
+
+    &:hover::after {
+      opacity: 1;
+    }
   }
 
   &--menu {

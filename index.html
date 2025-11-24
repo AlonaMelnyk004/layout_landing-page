@@ -153,7 +153,11 @@
             <div class="details__wrapper">
               <article class="detail">
                 <div class="detail__photos">
-                  <a href="#" class="detail__link detail__link--wide">
+                  <a
+                  href="#photo1"
+                  id="photo1"
+                  class="detail__link detail__link--wide"
+                  >
                     <img
                     class="detail__photo"
                     src="./src/images/details/Image-1.png"
@@ -161,7 +165,11 @@
                     >
                   </a>
 
-                  <a href="#" class="detail__link detail__link--square">
+                  <a
+                  href="#photo2"
+                  id="photo2"
+                  class="detail__link detail__link--square"
+                  >
                     <img
                     class="detail__photo"
                     src="./src/images/details/Image-2.png"
@@ -169,7 +177,6 @@
                     >
                   </a>
 
-                  </a>
                 </div>
 
                 <h3 class="detail__title">
@@ -183,7 +190,11 @@
               </article>
               <article class="detail">
                 <div class="detail__photos">
-                  <a href="#" class="detail__link detail__link--wide">
+                  <a
+                  href="#photo3"
+                  id="photo3"
+                  class="detail__link detail__link--wide"
+                  >
                     <img
                     class="detail__photo"
                     src="./src/images/details/Image-3.png"
@@ -191,7 +202,11 @@
                     >
                   </a>
 
-                  <a href="#" class="detail__link detail__link--square">
+                  <a
+                  href="#photo4"
+                  id="photo4"
+                  class="detail__link detail__link--square"
+                  >
                     <img
                     class="detail__photo"
                     src="./src/images/details/Image-4.png"
@@ -212,7 +227,11 @@
               </article>
               <article class="detail">
                 <div class="detail__photos">
-                  <a href="#" class="detail__link detail__link--square">
+                  <a
+                  href="#photo5"
+                  id="photo5"
+                  class="detail__link detail__link--square"
+                  >
                     <img
                     class="detail__photo"
                     src="./src/images/details/Image-5.png"
@@ -220,7 +239,11 @@
                     >
                   </a>
 
-                  <a href="#" class="detail__link detail__link--wide">
+                  <a
+                  href="#photo6"
+                  id="photo6"
+                  class="detail__link detail__link--wide"
+                  >
                     <img
                     class="detail__photo"
                     src="./src/images/details/Image-6.png"
@@ -244,7 +267,11 @@
 
             <div class="button-grid">
               <div class="details__button">
-                <a href="#" class="details__button--link">
+                <a
+                href="#button"
+                id="button"
+                class="details__button--link"
+                >
                 Explore
                 </a>
               </div>
@@ -254,7 +281,7 @@
           <section class="contacts" id="contacts">
             <h2  class="section-title contacts__title">Contacts us</h2>
 
-            <div class="contacts__form">
+            <form class="contacts__form">
               <input
               type="text"
               placeholder="Name"
@@ -264,18 +291,19 @@
               type="email"
               placeholder="Email"
               class="contacts__input"
+              required
+              pattern=".+@.+\..+"
+              title="Please enter a valid email address"
               >
               <textarea
               placeholder="Message"
               class="contacts__message"
               ></textarea>
 
-              <div class="contacts__button">
-                <a href="#" class="details__button--link">
+              <button type="reset" class="contacts__button">
                   Send
-                </a>
-              </div>
-            </div>
+              </button>
+            </form>
 
             <div class="contacts__info">
               <h4 class="contacts__info-title">Phone</h4>
