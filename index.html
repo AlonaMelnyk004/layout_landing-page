@@ -7,7 +7,8 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Landing Page</title>
+    <title>MyBIKE</title>
+    <link rel="icon" href=".//src/images/favicon.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link
       rel="preconnect"
@@ -41,7 +42,7 @@
               >
             </a>
             <div class="top-bar__icons">
-              <a href="#" class="icon icon--phone"></a>
+              <a href="tel:+12345555555" class="icon icon--phone"></a>
               <a href="#menu" class="icon icon--menu"></a>
             </div>
           </div>
@@ -281,11 +282,12 @@
           <section class="contacts" id="contacts">
             <h2  class="section-title contacts__title">Contacts us</h2>
 
-            <form class="contacts__form">
+            <form class="contacts__form" action="">
               <input
               type="text"
               placeholder="Name"
               class="contacts__input"
+              required
               >
               <input
               type="email"
@@ -298,30 +300,35 @@
               <textarea
               placeholder="Message"
               class="contacts__message"
+              required
               ></textarea>
 
-              <button type="reset" class="contacts__button">
+              <button type="submit" class="contacts__button">
                   Send
               </button>
             </form>
 
             <div class="contacts__info">
               <h4 class="contacts__info-title">Phone</h4>
-              <p class="contacts__info-item">
+              <a href="tel:+123455555555" class="contacts__info-item">
                 +1 234 5555-55-55
-              </p>
+              </a>
               <h4 class="contacts__info-title">Email</h4>
-              <p class="contacts__info-item">
+              <a href="mailto:hello@miami.com" class="contacts__info-item">
                 hello@miami.com
-              </p>
+              </a>
               <h4 class="contacts__info-title">Address</h4>
-              <p class="contacts__info-item">
+              <a
+              href="https://www.google.com/maps/search/?api=1&query=400+first+ave+suite+700+Minneapolis+MN+55401"
+              class="contacts__info-item"
+              target="_blank"
+              >
                 400 first ave.
                 <br>
                 suite 700
                 <br>
                 Minneapolis, MN 55401
-              </p>
+              </a>
             </div>
           </section>
         </div>
