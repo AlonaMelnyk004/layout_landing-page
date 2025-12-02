@@ -130,7 +130,6 @@
     align-self: center;
     background-color: #fff;
     border-radius: 40px;
-    font-family: Poppins, sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 27px;
@@ -143,6 +142,7 @@
 
     @include on-tablet {
       width: 288px;
+      align-self: flex-start;
     }
 
     @include on-desktop {
