@@ -94,6 +94,10 @@
         grid-column: span 4;
       }
     }
+
+    &:hover {
+      z-index: 1;
+    }
   }
 
   &__photo {
@@ -102,7 +106,6 @@
     height: 100%;
     object-fit: cover;
     cursor: pointer;
-
     @include hover(transform, scale(1.2));
   }
 

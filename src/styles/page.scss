@@ -9,15 +9,6 @@
     margin: 0;
     min-width: 320px;
     background-color: $main-background-color;
-    padding-bottom: 200px;
-
-    @include on-tablet {
-      padding-bottom: 480px;
-    }
-
-    @include on-desktop {
-      padding-bottom: 555px;
-    }
 
   }
 
@@ -39,20 +30,21 @@
   }
 
   &__footer {
-    position: fixed;
     background-image: url(../images/footer.png);
     height: 200px;
     background-size: cover;
     background-position: right;
     bottom: 0;
-    z-index: 10;
+    margin-top: 120px;
 
     @include on-tablet {
       height: 480px;
+      margin-top: 102px;
     }
 
     @include on-desktop {
       height: 555px;
+      margin-top: 164px;
     }
   }
 }
