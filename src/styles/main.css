@@ -54,6 +54,7 @@
   background-position: right;
   bottom: 0;
   margin-top: 120px;
+  z-index: 1;
 }
 
 @media (min-width: 576px) {
@@ -73,7 +74,7 @@
 .header {
   background-image: url(../images/Cover_photo.png);
   background-size: cover;
-  background-position: -258px 0;
+  background-position: -280px 0;
   background-repeat: no-repeat;
 }
 
