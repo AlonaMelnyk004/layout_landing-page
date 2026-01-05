@@ -24,6 +24,10 @@
   scroll-behavior: smooth;
 }
 
+.page:has(.page__menu:target) {
+overflow: hidden; /* не прокручувати сторінку */
+}
+
 .page__body {
   margin: 0;
   min-width: 320px;
@@ -820,6 +824,11 @@
   text-decoration: none;
   color: #fff;
 }
+
+.contacts__info-item:hover {
+  color: #e8e8f066;
+}
+
 
 .contacts__button {
   display: flex;
