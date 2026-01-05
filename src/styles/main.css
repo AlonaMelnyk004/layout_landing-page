@@ -825,9 +825,7 @@ overflow: hidden; /* не прокручувати сторінку */
   color: #fff;
 }
 
-.contacts__info-item:hover {
-  color: #e8e8f066;
-}
+
 
 
 .contacts__button {
@@ -868,4 +866,7 @@ overflow: hidden; /* не прокручувати сторінку */
   box-shadow: 1px 4px 16px 0 rgba(232, 232, 240, 0.64);
 }
 
+.contacts__info-item:hover {
+  color: #e8e8f066;
+}
 /*# sourceMappingURL=main.css.map */
